@@ -31,6 +31,8 @@ const server = http.createServer((req, res) => {
       }
       res.end();
       break;
+
+
     case 'POST':
       let rawData = '';
       req.on('data', (chunk) => {
